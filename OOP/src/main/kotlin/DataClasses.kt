@@ -12,20 +12,20 @@ fun main() {
     // Referential equality
     val surname1 = "Mandal"
     val surname2 = "Mandal"
-//    println(surname1 === surname2)
+//    println(surname1 === surname2) // why it returns true
 
     val user1 = MyUser("Arunabha", "Mandal", 20)
     val user2 = MyUser("Arunabha", "Mandal", 20)
 
     // Structural equality
-//    println(user1==user2)
-    println(user1.equals(user2))
+    println(user1==user2)
+//    println(user1.equals(user2))
     // Above two are same
 
     // Referential equality
     println(user1 === user2) // Referring different object
 
-    println(user1)
+//    println(user1)
 
     // Using data class
     val client1 = Client("Samrat", "Mandal", 20)
@@ -63,7 +63,7 @@ class MyUser(var fname: String, var lname: String, var age: Int) {
     }
 }
 
-// A function doesn't need any object and is independent, while the method is a function, which is linked with any object.
+// A function doesn't need any object and is independent, while the method is a function which is linked with any object.
 
 // All the above written codes are auto-generated in the data class
 // equals, hashCode, toString are automatically overridden in data classes

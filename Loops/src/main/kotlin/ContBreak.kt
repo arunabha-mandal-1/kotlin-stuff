@@ -31,7 +31,7 @@ fun main() {
 
         var i =0
         while (i < 5) {
-//            if(i==0) break@outerLoop
+            if(i==0) break@outerLoop
             i++
             println("***$i")
         }

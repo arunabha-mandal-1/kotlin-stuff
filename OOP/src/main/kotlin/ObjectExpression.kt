@@ -24,6 +24,7 @@ interface OnClickListener {
 }
 
 
+// Used for method 1
 class ClickListener(): OnClickListener {
     override fun onClick() {
         println("Logged in!!")

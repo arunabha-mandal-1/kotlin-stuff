@@ -18,7 +18,7 @@ fun main() {
 }
 
 /*
-* Delegation: Giving power given authority from one instance from one class to another.
+* Delegation: Delegation controls the allocation of power/authority from an instance to another for any object.
 *             It is used in scenarios where inheritance starts to break.
 *             e.g.: When we cannot inherit from two classes that's where delegation kicks in.
 * */
@@ -47,13 +47,13 @@ interface B {
 
 open class FirstDelegate: A {
     override fun print1() {
-        TODO("Not yet implemented")
+        println("Print 1 in Class A")
     }
 }
 
 open class SecondDelegate: B {
     override fun print2() {
-        TODO("Not yet implemented")
+        println("Print 2 in Class B")
     }
 }
 

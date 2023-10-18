@@ -1,8 +1,9 @@
 import java.awt.Stroke
 
 fun main() {
-//    val user = User("Arunabha", "Mandal", 20)
-//    val friend = User("Kittu", "Mandal", 20)
+    val user = User("Arunabha", "Mandal", 20)
+    val friend = User("Kittu", "Mandal", 20)
+    println(friend.name)
 
 //    val employee1 = Employee("  Samrat  ")
 //    val employee2 = Employee("Babai", "Mandal")
@@ -16,16 +17,19 @@ fun main() {
 //    println(student1.fname)
 //    student1.fname = "Kittu"
 
-    val teacher1 = Teacher("Abc", "Def", 45)
+//    val teacher1 = Teacher("Abc", "Def", 45)
 //    teacher1.favMovie = "Ragini MMS 2"
-    println(teacher1.favMovie)
+//    println(teacher1.favMovie)
 }
 
 // 1. Initializer block
 class User(name: String, var lastName: String, var age: Int) {
     /*
-    * If we want more than one line of code to be executed at the time of object is created,
-    * we have to use initializer block
+    * If we want more than one line of code to be executed at the time of object is created, we have to use initializer block.
+    * The primary constructor initializes a class instance and its properties in the class header.
+    * The class header can't contain any runnable code.
+    * If you want to run some code during object creation, use initializer blocks inside the class body.
+    * Code in initializer blocks effectively becomes part of the primary constructor.
     * */
     // Only accept name starts with 'A'
     var name: String
@@ -89,7 +93,7 @@ class Student(fname: String, var lname: String, var age: Int) {
             println("$value was assigned to fname property!!")
             field = value
 
-            // If we do this, it will call setter gagin and again
+            // If we do this, it will call setter again and again
             // fname = value
         }
 

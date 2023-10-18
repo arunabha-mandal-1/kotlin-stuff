@@ -1,5 +1,4 @@
 import java.lang.Exception
-
 fun main() {
     val success = Result.Success("SUCCESS")
     val progress = Result.Progress("PROGRESS")

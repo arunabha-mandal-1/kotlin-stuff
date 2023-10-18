@@ -1,10 +1,10 @@
 import java.awt.DisplayMode
 
 fun main() {
-//    println(Directions.NORTH)
-//    println(Directions.SOUTH)
-//    println(Directions.EAST)
-//    println(Directions.WEST)
+    println(Directions.NORTH)
+    println(Directions.SOUTH)
+    println(Directions.EAST)
+    println(Directions.WEST)
 
 //    for (direction in Directions.values()) {
 //        println(direction)
@@ -17,14 +17,14 @@ fun main() {
 //    val direction = Directions.EAST
 
     // Value can come from a db or anywhere
-    val direction = Directions.valueOf("east".uppercase())
-    when(direction) {
-        Directions.EAST -> println("the dircetion is east.")
-        Directions.WEST -> println("the dircetion is west.")
-        Directions.NORTH -> println("the dircetion is north.")
-        Directions.SOUTH -> println("the dircetion is south.")
-    }
-
+//    val direction = Directions.valueOf("east".uppercase())
+//    when(direction) {
+//        Directions.EAST -> println("the dircetion is east.")
+//        Directions.WEST -> println("the dircetion is west.")
+//        Directions.NORTH -> println("the dircetion is north.")
+//        Directions.SOUTH -> println("the dircetion is south.")
+//    }
+//
     Directions.EAST.distance = 85
     println(Directions.EAST.distance)
 
