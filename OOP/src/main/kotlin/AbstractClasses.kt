@@ -5,7 +5,7 @@ fun main() {
 // You can inherit from a single class, but you can do the same from multiple interfaces.
 // You cannot create an instance using abstract class. It can only be inherited.
 // You can only declare functions in abstract classes, but you cannot define them.
-// They are similar to interfaces but the only difference is that abstract classes can have properties while interfaces can not have.
+// They are similar to interfaces but the only difference is that abstract classes can have properties initialized while interfaces can not have.
 abstract class MyVehicle {
 //    val text = "I love cars!!"
 

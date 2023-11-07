@@ -14,6 +14,10 @@ fun main() {
 *            implements that specific interface.
 * */
 
+//You can declare properties in interfaces.
+// A property declared in an interface can either be abstract or provide implementations for accessors.
+// Properties declared in interfaces can't have backing fields, and therefore accessors declared in interfaces can't reference them
+
 // Interfaces cannot have constructor
 interface Engine {
     fun startEngine()
@@ -23,7 +27,6 @@ interface Engine {
 
 // They start the engines in different way, overridden is a must.
 class AllCar(val name: String, val color: String) : Engine {
-
     // You must override the function(s)
     override fun startEngine() {
         println("The car ${this.name} is starting the engine!")
